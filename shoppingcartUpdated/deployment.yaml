@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shoppingcartapp
+  namespace:   
+  labels:
+    app: shoppingcartapp
+    tier: backend
+    version: v1
+spec:
+  selector:
+    matchLabels:
+      app: shoppingcartapp
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: shoppingcartapp
+    spec:
+      containers:
+      - name: shoppingcartapp
+        image: localhost:5000/shoppingcart
+        ports:
+        - containerPort: 8061

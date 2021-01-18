@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Lays</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Tell the browser to be responsive to screen width -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+	integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+	crossorigin="anonymous">
+<!--<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>-->
+
+<script type="module"
+	src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule=""
+	src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+	
+<!-- jQuery -->
+        <script src="/layouts/xacadpro/plugins/jquery/jquery.min.js"></script>
+<script src="/js/customJS.js" type="text/javascript"></script>	
+		
+<style type="text/css">
+.container {
+	margin-top: 100px;
+}
+
+#img 
+{
+  height:40px;
+}
+
+#ion-icon1 {
+	float: right;
+	margin-right: 30px;
+}
+
+#cartitem {
+	float: right;
+	margin-right: 30px;
+}
+</style>
+
+</head>
+<body>
+<div id="img">
+<a href="/ProductsHome">Home</a>
+<a href="/cartitem" id="cartitem">
+<ion-icon name="cart-outline" size="large" id="ion-icon1"></ion-icon>Cart</a>
+</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<img src="/images/rice.png" class="img-thumbnail" alt="Lays"
+					height="500px" width="500px">
+
+			</div>
+			<div class="col-lg-4">
+				<div>
+					<p>It all starts with farm-grown potatoes, cooked and seasoned
+						to perfection. So every LAY'S potato chip is perfectly crispy and
+						full of fresh potato taste. Happiness in Every Bite.</p>
+					<div>Price : 50 INR</div>
+				</div>
+
+			</div>
+			<div class="col-lg-4">
+				<div id="cart">
+
+					<ion-icon name="cart-outline" size="large" id="cart-icon"></ion-icon>
+					<button class="btn btn-primary btn-sm" onclick="createCartItem_product_2()">Add to cart</button>
+
+				</div>
+				<br>
+				<label for="quantity">Quantity :</label> 
+				<select class="form-select" id="quantity"
+					aria-label="Quantity">
+					
+					<option value="1" selected="selected">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

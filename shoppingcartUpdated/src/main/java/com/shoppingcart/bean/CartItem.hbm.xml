@@ -1,0 +1,65 @@
+ version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- @author  Srikanth Brahmadevara: Harivara Technology Solutions, CODE GENERATED -->
+<hibernate-mapping>
+	<class name="com.shoppingcart.bean.CartItem" table="CartItem">
+		<id name="cartItemId" type="java.lang.Integer">
+			<column name="cartItemId" />
+			<generator class="identity" />
+		</id>
+		
+				
+				
+		<property name="userCartId" type="java.lang.Integer">
+			<column name="UserCartId" length="20" />
+		</property>
+		
+		<property name="productId" type="java.lang.Integer">
+			<column name="ProductId" length="20" />
+		</property>
+		
+		<property name="productQuantity" type="java.lang.Integer">
+			<column name="ProductQuantity" length="15" />
+		</property>
+		
+		<property name="productUnitPrice" type="java.lang.Integer">
+			<column name="ProductUnitPrice" length="30" />
+		</property>
+		
+		<property name="subTotalAmount" type="java.lang.Integer">
+			<column name="SubTotalAmount" length="25" />
+		</property>
+		
+		<property name="grandTotal" type="java.lang.Integer">
+			<column name="GrandTotal" length="25" />
+		</property>
+
+		<property name="vwLastModifiedDate" type="date">
+			<column name="VwLastModifiedDate" length="10" />
+		</property>
+		<property name="vwLastModifiedTime" type="java.lang.Integer">
+			<column name="VwLastModifiedTime" length="9" />
+		</property>
+		<property name="vwLastAction" type="java.lang.String">
+			<column name="VwLastAction" length="20" />
+		</property>
+		<property name="vwModifiedBy" type="java.lang.String">
+			<column name="VwModifiedBy" length="100" />
+		</property>
+		<property name="vwTxnRemarks" type="java.lang.String">
+			<column name="VwTxnRemarks" length="500" />
+		</property>
+		<property name="vwTxnStatus" type="java.lang.String">
+			<column name="VwTxnStatus" length="25" />
+		</property>
+		<property name="isRequestUnderProcesss"
+			type="java.lang.Integer">
+			<column name="IsRequestUnderProcesss" length="10" />
+		</property>
+		<property name="legacyRecordId"
+			type="java.lang.Integer">
+			<column name="LegacyRecordId" length="10" />
+		</property>
+	</class>	
+</hibernate-mapping>
