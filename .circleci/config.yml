@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/HTS
+    working_directory: ~/shoppingcartUpdated
     docker:
       - image: circleci/openjdk:8-stretch
     steps:
